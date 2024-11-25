@@ -1,0 +1,157 @@
+/* Resetando algumas propriedades de estilo padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #8f8f8f;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #0d6efd;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+#galeria {
+    margin-top: 30px;
+}
+
+.menu-galeria {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap; /* Permite a flexbox quebrar linha em telas pequenas */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.item-galeria {
+    text-align: center;
+    max-width: 250px; /* Limita a largura de cada item */
+    flex-grow: 1;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-galeria img:hover {
+    transform: scale(1.05);
+}
+
+.item-galeria p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+aside {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+aside h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
